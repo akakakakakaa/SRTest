@@ -12,9 +12,9 @@ using namespace std;
 // 이를 해결하기 위해 명암차를 구하여 명암을 되돌리기 위한 작업을 수행하기 위한 코드이다.
 // input 영상의 포맷은 YUV420P, opencv의 이미지 포맷은 rgb로 가정한다.
 int main() {
-	const char* ganFile = "videos/test2_srgan.mp4";
-	const char* restoredGanFile = "videos/test2_srgan_restored.avi";
-	const char* oriFile = "videos/test2.mp4";
+	const char* ganFile = "videos/test_srgan.mp4";
+	const char* restoredGanFile = "videos/test_srgan_restored.avi";
+	const char* oriFile = "videos/test.mp4";
 	
 	//명암 수정 후, 비디오로 저장하기 위해 ffmpeg을 수행한다.
 	AVFormatContext* inFmtCtx = NULL;
